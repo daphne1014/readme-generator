@@ -61,9 +61,9 @@ const questions = () => {
         }
       },
       {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
-        message: 'Which licenses are you adding to this project? (Check all that apply)',
+        message: 'Which licenses are you adding to this project?',
         choices: ['Apache 2.0 License', 'Boost Software License 1.0', 'BSD 3-Clause License', 'Eclipse Public License 1.0', 'GNU GPL v3', 'The MIT License', 'Open Database License (ODbL)']
       },
       {
@@ -88,6 +88,32 @@ const questions = () => {
             return true;
           } else {
             console.log('Please provide contributer infomation!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'username',
+        message: 'What is your GitHub Username?',
+        validate: nameInput => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log('Please provide your GitHub Username!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+        validate: nameInput => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log('Please provide your email address!');
             return false;
           }
         }
@@ -124,4 +150,4 @@ function init() { }
 init();
 
 
-module.exports = { writeToFile};
+module.exports = { writeToFile };
