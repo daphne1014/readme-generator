@@ -13,8 +13,5 @@ SO THAT I can quickly create a professional README for a new project
 ## Screenshot
 ![walkthrough video](./Develop/assets/READMEpreview.gif?raw=true "A walkthrough video demonstrating the functionality of the application")
 
-## Website
-https://daphne1014.github.io/
-
 ## Contribution
 Made with ❤️ by Daphne
