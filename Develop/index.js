@@ -148,7 +148,7 @@ function init() {
     return generateMarkdown(data)
   })
   .then(fileContent =>{
-    return writeToFile('./README.md', fileContent)
+    return writeToFile('./dist/README.md', fileContent)
   })
   .then(writeFileResponse => {
     console.log(writeFileResponse);
